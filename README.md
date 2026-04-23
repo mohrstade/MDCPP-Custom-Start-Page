@@ -1,12 +1,20 @@
 # MDCPP Custom
 
-This folder is the clean upload package for the Team Startpage prototype.
+This folder is the clean upload package for the Team Startpage prototype built from the Microsoft MDCPP sample.
 
-## What this package contains
+Official Microsoft references:
+
+- MDCPP samples repo:
+  `https://github.com/microsoft/MDCPP-samples`
+- Present Live sample README:
+  `https://github.com/microsoft/MDCPP-samples/blob/main/present-live-integration-app-sample/README.md`
+
+## What this package is
 
 This package contains only the files needed to understand, review, and run the customized prototype safely inside another repository or organization workspace.
 
 Main idea:
+
 - Microsoft 365 sign-in
 - Teams-inspired start page UI
 - recent-files-first home view
@@ -14,21 +22,29 @@ Main idea:
 - in-window file preview
 - edit handoff to Microsoft 365
 
-## Main app location
+## Package structure
 
-The actual app is inside:
+This upload package is intentionally simplified.
+
+Main app folder:
 
 `present-live-integration-app-sample`
 
 Important source files:
+
 - `present-live-integration-app-sample/src/desktop.ts`
 - `present-live-integration-app-sample/src/aadauth.ts`
 - `present-live-integration-app-sample/src/spoPicker.ts`
 - `present-live-integration-app-sample/src/static/desktop.html`
 
+Additional setup guide:
+
+- `AZURE_SETUP_README.md`
+
 ## What is included
 
 Included because they are needed:
+
 - source code in `src/`
 - static assets in `images/`
 - project config files like `package.json`, `tsconfig.json`, `webpack.config.js`, `webpack.development.js`
@@ -37,6 +53,7 @@ Included because they are needed:
 ## What is intentionally NOT included
 
 Removed from this handoff package:
+
 - `.env`
 - `node_modules/`
 - `dist/`
